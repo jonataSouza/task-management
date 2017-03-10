@@ -1,0 +1,21 @@
+.switch-large .onoffswitch-inner:before, .switch-large .onoffswitch-inner:after {
+  height: 28px;
+  padding-top: 6px;
+  font-size: 12px;
+}
+
+.switch-situacao .onoffswitch-switch {
+  right: 62px;
+}
+
+.switch-situacao .onoffswitch {
+  width: 80px;
+}
+
+.switch-situacao .onoffswitch-inner:before {
+  content: "ATIVO";
+}
+
+.switch-situacao .onoffswitch-inner::after {
+  content: "INATIVO";
+}

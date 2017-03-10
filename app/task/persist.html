@@ -1,0 +1,62 @@
+<!--
+* @file persist.html
+* @brief PERSISTÊNCIA DE MUNDO
+* @author JONATA CARDOSO DE SOUZA
+* @date 10/03/2017
+* @version 1.0
+-->
+<div ng-controller="TaskPersistController as ctrl">
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="ibox float-e-margins">
+        <div class="ibox-title">
+          <h5>Task management | <a  ui-sref="app.task">listagem</a> |
+            <small>{{ ctrl.data.cod_task ? "Editar task" : "Nova task" }}</small>
+          </h5>
+          <div ibox-tools></div>
+        </div>
+        <form ng-submit="ctrl.fnPersist()">
+          <div class="ibox-content">
+            <input type="hidden" ng-model="ctrl.data.cod_task" class="form-control">
+            <div class="row">
+              <div class="col-xs-3">
+                <div class="form-group">
+                  <label>Nome task</label>
+                  <input type="text" ng-model="ctrl.data.dsc_task" class="form-control"
+                  required placeholder="Informe o nome da task...">
+                </div>
+              </div>
+              <div class="col-xs-1">
+                <div class="form-group">
+                  <label>Status</label>
+                  <div class="switch switch-status switch-large">
+                    <div class="onoffswitch">
+                      <input type="checkbox" class="onoffswitch-checkbox" id="status"
+                      ng-model="ctrl.data.cod_status" ng-true-value="'1'" ng-false-value="'0'">
+                      <label class="onoffswitch-label" for="status">
+                        <span class="onoffswitch-inner"></span>
+                        <span class="onoffswitch-switch"></span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-6">
+               <div class="form-group">
+                <label>Exemplo: Criando uma Directive das task</label>
+                <task-select ng-model="ctrl.data.task"></task-select>
+                {{ctrl.data.task}}
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12">
+              <input type="submit" class="btn btn-success btn" style="float: right;" value='Salvar informações'>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+</div>
