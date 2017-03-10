@@ -1,0 +1,48 @@
+<!--
+* @file index.html
+* @brief INCLUDE ALL FILES
+* @author JONATA CARDOSO DE SOUZA
+* @date 09/03/2017
+* @version 1.0
+-->
+<!DOCTYPE html>
+<html ng-app="task">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Task</title>
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font awesome -->
+  <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+  <!-- Sweetalert -->
+  <link href="css/plugins/sweetalert/sweetalert.css" rel="stylesheet">
+  <link id="loadBefore" href="css/style.css" rel="stylesheet">
+</head>
+<body landing-scrollspy id="page-top">
+  <!-- Main view  -->
+  <div ui-view></div>
+  <!-- jQuery and Bootstrap -->
+  <script src="js/jquery/jquery-2.1.1.min.js"></script>
+  <script src="js/plugins/jquery-ui/jquery-ui.js"></script>
+  <script src="js/bootstrap/bootstrap.min.js"></script>
+  <!-- Main Angular scripts-->
+  <script src="js/angular/angular.min.js"></script>
+  <script src="js/plugins/oclazyload/dist/ocLazyLoad.min.js"></script>
+  <script src="js/ui-router/angular-ui-router.min.js"></script>
+  <script src="js/plugins/angular-idle/angular-idle.js"></script>
+  <script src="js/plugins/sweetalert/sweetalert.min.js" type="text/javascript"></script>
+  <script src="js/angular/angular-base64.min.js" type="text/javascript"></script>
+  <!-- Angular App Script -->
+  <script src="js/app.js"></script>
+  <script src="js/config.js"></script>
+  <!--  Data Table -->
+  <script src="app/data-table/builder.service.js"></script>
+  <!-- Task -->
+  <script src="app/task/config.js"></script>
+  <script src="app/task/list.controller.js"></script>
+  <script src="app/task/persist.controller.js"></script>
+  <script src="app/task/select.directive.js"></script>
+</body>
+</html>
